@@ -71,7 +71,7 @@ class SlapperEntity extends Entity {
         $player->dataPacket($pk);
     }
 
-    public function despawnFrom(Player $player, bool $send = true) {
+    public function despawnFrom(Player $player, bool $send = true): void {
         parent::despawnFrom($player, $send);
         $pk = new RemoveEntityPacket();
         $pk->entityUniqueId = $this->tagId;
