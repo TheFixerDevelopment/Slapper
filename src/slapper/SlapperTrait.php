@@ -41,7 +41,7 @@ trait SlapperTrait {
         $this->getDataPropertyManager()->setFloat(Entity::DATA_SCALE, $this->namedtag->getFloat("Scale"));
     }
 
-    public function tryChangeMovement(){
+    public function tryChangeMovement(): void{
 
     }
 
