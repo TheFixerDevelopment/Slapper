@@ -78,7 +78,7 @@ class SlapperEntity extends Entity {
         $player->dataPacket($pk);
     }
 
-    public function broadcastMovement(bool $teleport = false) {
+    public function broadcastMovement(bool $teleport = false): void {
         if($this->chunk !== null) {
             parent::broadcastMovement($teleport);
             $pk = new MoveEntityPacket();
