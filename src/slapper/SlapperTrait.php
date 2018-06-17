@@ -45,7 +45,7 @@ trait SlapperTrait {
 
     }
 
-    public function sendData($playerList, array $data = null) {
+    public function sendData($playerList, array $data = null): void {
         if(!is_array($playerList)){
             $playerList = [$playerList];
         }
